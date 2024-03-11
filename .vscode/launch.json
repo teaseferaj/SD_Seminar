@@ -17,6 +17,6 @@
             "tenant": "default",
             "schemaUpdateMode": "Recreate"
 
-        }
+        } 
     ]
 }
