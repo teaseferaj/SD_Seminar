@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[]}
+﻿{"Added":[],"Modified":[{"Id":50104,"Kind":10,"Name":"CSD Seminar Comment Line","PackagePath":"/src/tables/tab04_SeminarCommentLine.al"},{"Id":50101,"Kind":12,"Name":"CSD Seminar Card","PackagePath":"/src/pages/pag01_SeminarCard.al"},{"Id":50106,"Kind":12,"Name":"CSD Seminar Comment Sheet","PackagePath":"/src/pages/pag06_SeminarCommentSheet.al"},{"Id":50101,"Kind":10,"Name":"CSD Seminar","PackagePath":"/src/tables/tab01_Seminar.al"}],"Removed":[]}
