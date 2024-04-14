@@ -1,14 +1,14 @@
 table 50104 "CSD Seminar Comment Line"
 {
     Caption = 'Seminar Comment Line';
-    LookupPageId = "CSD Seminar Comment List";
-    DrillDownPageId = "CSD Seminar Comment List";
+    //LookupPageId = "CSD Seminar Comment List";
+    //DrillDownPageId = "CSD Seminar Comment List";
 
     fields
     {
         field(10; "Table Name"; Option)
         {
-            OptionMembers = "Seminar","Seminar Registration Header","Posted Seminar Reg. Header";
+            OptionMembers = "Seminar","Seminar Registration Header","Posted Seminar Reg. Header","Seminar Registration";
             OptionCaption = 'Seminar,Seminar Registration,Posted Seminar Registration';
         }
 
@@ -20,7 +20,10 @@ table 50104 "CSD Seminar Comment Line"
         field(30; "No."; Code[20])
         {
             Caption = 'No.';
-            TableRelation = if ("Table Name" = CONST(Seminar)) "CSD Seminar";
+            TableRelation = if ("Table Name" = CONST(Seminar)) "CSD Seminar"
+            else
+            if ("Table Name" = const("Seminar Registration")) "CSD Seminar Reg. Header";
+
 
         }
 
@@ -74,6 +77,20 @@ table 50104 "CSD Seminar Comment Line"
     trigger OnRename()
     begin
 
+    end;
+
+    procedure SetUpNewLine()
+
+    var
+        SeminarCommentLine: Record "CSD Seminar Comment Line";
+    begin
+        SeminarCommentLine.SetRange("Table Name", "Table Name");
+        SeminarCommentLine.SetRange("No.", "No.");
+        SeminarCommentLine.SetRange("Document Line No.",
+        "Document Line No.");
+        SeminarCommentLine.SetRange("Date", WorkDate);
+        if SeminarCommentLine.IsEmpty then
+            Date := WorkDate;
     end;
 
 }
