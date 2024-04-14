@@ -38,7 +38,7 @@ pageextension 50100 "CSD ResourceCardExt" extends "Resource Card"
     }
 
 
-    trigger OnAfterGetCurrRecord();
+    trigger OnAfterGetRecord();
 
     begin
         ShowMaxField := (Type = Type::Machine);

@@ -2,79 +2,57 @@ table 50107 "CSD Seminar Comment List"
 {
     Caption = 'Seminar Comment List';
 
+    fields
+    {
+        field(10; "Table Name"; Option)
+        {
+            Caption = 'Table Name';
+            OptionMembers = "Seminar","Seminar Registration Header","Posted Seminar Reg. Header";
+            OptionCaption = 'Seminar, Seminar Registration, Posted Seminar Registration';
+        }
 
-{
-        field(10;"Table Name"; Option)
+        field(20; "Document Line No."; Integer)
         {
-            Capti on='Table Name';
-           //Sets the list of options that are available in the table field that is currently selected.
-            OptionM = 'Table Name';
-            //Sets the list of options that are available in the table field that is currently selected.
-            OptionMembers = 'Seminar,Seminar Registration,Posted Seminar Registration';
-        } //Sets the string string options that are displayed to the user.
-            OptionCaption = 
-        field(20;"Document Line No.";Integer)
-        {
-            Capti "Document Line No."; .';
+            Caption = 'Document Line No.';
         }
- = 
-        field(30;"No.";Code[20])
-        {
-            Capti "No."; .';
-            TableRelation=if ("Table Name"=CONST(Seminar)) "CSD Seminar";
-             = 
-        } =  = 
 
-        field(40;"Line No.";Integer)
+        field(30; "No."; Code[20])
         {
-            Capti "Line No."; .';
+            Caption = 'No.';
+            TableRelation = if ("Table Name" = CONST(Seminar)) "CSD Seminar"; // Corrected TableRelation syntax
         }
- = 
-        field(50;"Date";Date)
+
+        field(40; "Line No."; Integer)
         {
-            Capti "Date"; e';
+            Caption = 'Line No.';
         }
- = 
-        field(60;"Code";Code[10])
+
+        field(50; "Date"; Date)
         {
-            Capti "Code"; e';
+            Caption = 'Date';
         }
- = 
-        field(70;"Comment";Text[80]){
-            caption='Comment';
-        } "Comment"; 
+
+        field(60; "Code"; Code[10])
         {
-            caption = 
-    
-    keys
-{
-        key(PK;"Table Name","Document Line No.","No.","Line No.")
+            Caption = 'Code';
+        }
+
+        field(70; "Comment"; Text[80])
         {
-            Clu "Table Name", "Document Line No.", "No.", 
+            Caption = 'Comment';
         }
     }
-    
+
+    keys
+    {
+        key(PK; "Table Name", "Document Line No.", "No.", "Line No.")
+        {
+            Clustered = true;
+        }
+    }
+
     var
-    myInt: Integer;
-    
-    trigger OnInsert()
-begin
-        
-    end;
+        myInt: Integer;
 
-    end;
-begin
-        
-    end;
-
-    end;
-begin
-        
-    end;
-
-    end;
-begin
-        
-    end;
-
-    end;
+    // Empty triggers removed
+}

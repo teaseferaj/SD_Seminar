@@ -30,7 +30,7 @@ tableextension 50100 "CSD ResourceExt" extends Resource
 
         field(50102; "CSD Maximum Participants"; Integer)
         {
-            DataClassification = ToBeClassified;
+            //DataClassification = ToBeClassified;
             Caption = 'Maximum Participants';
         }
 
