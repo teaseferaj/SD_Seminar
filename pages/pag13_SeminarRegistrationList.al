@@ -76,6 +76,19 @@ page 50113 "CSD Seminar Registration List"
                     RunObject = Page 50124;
                     RunPageLink = "Document No." = Field("No.");
                 }
+                // Chapter 7 - Lab 4-8
+                // Added Action Post
+
+                action("&Post")
+                {
+                    Caption = '&Post';
+                    Image = PostDocument;
+                    Promoted = true;
+                    PromotedIsBig = true;
+                    PromotedCategory = Process;
+                    ShortcutKey = F9;
+                    RunObject = codeunit "CSD Seminar-Post (Yes/No)";
+                }
             }
         }
     }

@@ -1228,6 +1228,51 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar Jnl.-Check Line - NamedType PostingDateTxt</note>
         </trans-unit>
+        <trans-unit id="Codeunit 997952810 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There is no participant to post.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar-Post - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 997952810 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting lines              #2######\</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar-Post - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 997952810 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Registration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar-Post - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 997952810 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Registration %1  -&gt; Posted Reg. %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar-Post - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 997952810 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The combination of dimensions used in %1 is blocked. %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar-Post - NamedType Text005</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 997952810 - NamedType 2008153173" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The combination of dimensions used in %1,  line no. %2 is blocked. %3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar-Post - NamedType Text006</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 997952810 - NamedType 2645849790" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The dimensions used in %1 are invalid. %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar-Post - NamedType Text007</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 997952810 - NamedType 3283546407" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The dimensions used in %1, line no. %2 are invalid. %3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar-Post - NamedType Text008</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2321225162 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to post the Registration?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar-Post (Yes/No) - NamedType Text001</note>
+        </trans-unit>
         <trans-unit id="Page 1014107342 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Lines</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1403,6 +1448,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension CSD SourceCodeSetupExt - Control CSD SeminarGroup - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 4232848226 - Field 3215205264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1308990239">
+          <source>Seminar No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD ResJournalLineExt - Field CSD Seminar No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4232848226 - Field 3170642127 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1308990239">
+          <source>Seminar Registration No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD ResJournalLineExt - Field CSD Seminar Registration No. - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2331780929 - Field 3679661628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 348912950">
           <source>Maximum Participants</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1427,6 +1482,16 @@
           <source>Instructor,Room</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD ResourceExt - Change Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2833016610 - Field 3215205264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2850645989">
+          <source>Seminar No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD ResourceLedgerEntryExt - Field CSD Seminar No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2833016610 - Field 3170642127 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2850645989">
+          <source>Seminar Registration No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD ResourceLedgerEntryExt - Field CSD Seminar Registration No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1431394974 - Field 1023874429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1642199961">
           <source>Seminar</source>
