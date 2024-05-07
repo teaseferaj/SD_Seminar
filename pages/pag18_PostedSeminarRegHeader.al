@@ -6,6 +6,8 @@ table 50118 "CSD Posted Seminar Reg. Header"
     // var
     //SeminarSetup: Record "CSD Seminar Setup";
     Caption = 'Posted Seminar Reg. Header';
+    LookupPageId = "CSD Posted Seminar Reg. List";
+    DrillDownPageId = "CSD Posted Seminar Reg. List";
 
     fields
     {
@@ -172,7 +174,7 @@ table 50118 "CSD Posted Seminar Reg. Header"
         }
     }
 
-   keys
+    keys
     {
         key(PK; "No.")
         {
