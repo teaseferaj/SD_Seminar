@@ -26,7 +26,7 @@ table 50133 "CSD Seminar Register"
         {
             Caption = 'Creation Date';
         }
-        field(5; "Source Code"; Code[10])
+        field(5; "Source Code"; Code[12])
         {
             Caption = 'Source Code';
             TableRelation = "Source Code";

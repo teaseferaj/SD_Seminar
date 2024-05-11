@@ -288,6 +288,12 @@ table 50110 "CSD Seminar Reg. Header"
             Caption = 'Posting No.';
         }
 
+        field(40; "No. Printed"; Integer)
+        {
+            Caption = 'No. Printed';
+            Editable = false;
+        }
+
     }
 
     keys
@@ -387,3 +393,5 @@ table 50110 "CSD Seminar Reg. Header"
     end;
 }
 
+// Chapter 9 - Lab 1-1
+// - Added new field "No. Printed

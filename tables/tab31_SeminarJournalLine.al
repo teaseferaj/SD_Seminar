@@ -8,7 +8,7 @@ table 50131 "CSD Seminar Journal Line"
 
     fields
     {
-        field(1; "Journal Template Name"; Code[10])
+        field(1; "Journal Template Name"; Code[20])
         {
             Caption = 'Journal Template Name';
         }
@@ -26,7 +26,7 @@ table 50131 "CSD Seminar Journal Line"
             Caption = 'Posting Date';
             trigger OnValidate();
             begin
-              Validate("Document Date","Posting Date");
+                Validate("Document Date", "Posting Date");
             end;
         }
         field(5; "Document Date"; Date)
@@ -128,12 +128,12 @@ table 50131 "CSD Seminar Journal Line"
             TableRelation = IF ("Source Type" = const(Seminar)) "CSD Seminar";
         }
 
-        field(32; "Journal Batch Name"; Code[10])
+        field(32; "Journal Batch Name"; Code[20])
         {
             Caption = 'Journal Batch Name';
         }
 
-        field(33; "Source Code"; Code[10])
+        field(33; "Source Code"; Code[12])
         {
             Caption = 'Source Code';
             Editable = false;
@@ -159,10 +159,10 @@ table 50131 "CSD Seminar Journal Line"
         }
     }
 
-    procedure EmptyLine() : Boolean;
+    procedure EmptyLine(): Boolean;
 
     begin
-      exit(("Seminar No." = '') AND (Quantity = 0));
+        exit(("Seminar No." = '') AND (Quantity = 0));
     end;
 
 }

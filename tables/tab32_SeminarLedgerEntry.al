@@ -123,7 +123,7 @@ table 50132 "CSD Seminar Ledger Entry"
         {
             Caption = 'Journal Batch Name';
         }
-        field(25; "Source Code"; Code[10])
+        field(25; "Source Code"; Code[12])
         {
             Caption = 'Source Code';
             Editable = false;

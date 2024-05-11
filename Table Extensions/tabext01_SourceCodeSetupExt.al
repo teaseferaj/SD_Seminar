@@ -2,7 +2,7 @@ tableextension 50101 "CSD SourceCodeSetupExt" extends "Source Code Setup"
 {
     fields
     {
-        field(50100; "CSD Seminar"; Code[10])
+        field(50100; "CSD Seminar"; Code[12])
         {
             Caption = 'Seminar';
             TableRelation = "Source Code";
